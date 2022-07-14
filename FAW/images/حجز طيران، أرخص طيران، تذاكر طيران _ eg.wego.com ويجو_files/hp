@@ -1,0 +1,22 @@
+
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://tapestry.tapad.com/tapestry/1?ta_partner_did=ZhCrGVVHw5kZIw1mp0y4EVFFGe2aIfIPCfBFyZxYWSPQ7_KMnJ36TDY8XRjQ7F2_&ta_partner_id=996&ta_redirect=https://pixel.sojern.com/idsync/tapad?id=${IDS:key}');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    (function(){var t=document.createElement("img");t.async=!0,t.width=1,t.height=1,t.style.display="none",t.src="https://pippio.com/api/sync?pid=709911";document.body.appendChild(t)})();

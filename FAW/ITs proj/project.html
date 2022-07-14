@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body background="images/5.png">
+<style>
+body {font-family: "Times New Roman", Times, serif; }
+
+/* Style the tab */
+.tab{
+  float: right;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #009999;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #e7e7e7;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #00cccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #00cccc;
+
+}
+
+.to{
+  display: inline-block;
+  padding: 35px 45px;
+  font-size: 36px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #009999;
+  border: none;
+  border-radius: 15px;
+  position: relative; 
+  left: 6.2em;
+  top: 12em; 
+}
+
+.to2{
+  display: block;
+  padding: 35px 45px;
+  margin:20px;
+  font-size: 36px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #009999;
+  border: none;
+  border-radius: 15px;
+  position: relative; 
+  left: 5.3em;
+  top: 12em; 
+}
+
+
+
+a:hover {background-color: #00cccc}
+
+a:active {
+  background-color: #e7e7e7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'home')">home</button>
+  <button class="tablinks" onclick="openCity(event, 'about')">about</button>
+  <button class="tablinks" onclick="openCity(event, 'contact us')">contact us</button>
+</div>
+
+<div id="home" class="tabcontent">
+  <h3>home</h3>
+  <p>this page is a home page</p> 
+
+</div>
+
+<div id="about" class="tabcontent">
+  <h3>about</h3>
+  <p>Now you can book your trip or hotel through our website without any effort.
+This is a flight booking website and it also provides hotel reservations
+Disclaimer: The site is now running some Arab countries, but we are working on developing it </p> 
+</div>
+
+<div id="contact us" class="tabcontent">
+  <h3>contact us</h3>
+  <p>Now you can follow us and communicate with us through the social media sites:
+@FAW</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+<button class="to" onclick="document.location='Book_A_Ticket (1).html'">Flights</button>
+<button class="to" onclick="document.location='page1.html'">Hotels</button>
+<button class="to2" onclick="document.location='Book_A_Ticket (1).html'">Confirmation a abook</button>
+
+</body>
+</html>

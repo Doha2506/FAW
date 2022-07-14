@@ -1,0 +1,75 @@
+body
+{
+	margin:10px 200px;
+	font:italic normal large arial;
+}
+
+form{display:none;}
+
+legend,fieldset
+{
+	border:2px solid black;
+	padding:10px;
+	margin:5px;
+	background-color:#E5DDF3 ;
+	color:#009999;	
+	border-radius:8px;
+}
+.one
+{
+	display:inline;
+	margin:7px ;
+	
+}
+select
+{
+	display:inline;		
+	font:italic normal medium arial;
+	margin:10px ;
+	padding:7px;
+	background-color:white;
+	color:#009999;
+	border-radius:8px;
+}
+.stop
+{
+	display:inline;		
+	font:italic normal medium arial;
+	margin:10px 10px 10px 50px;
+	padding:7px;
+	background-color:white;		
+}
+
+label
+{
+	display:block;
+	margin:7px;
+}
+input
+{
+	margin:20px;
+	
+}
+
+.butt
+{
+	display:block;
+	width:70;
+	height:40;
+	padding:4px 3px 5px 3px;
+	margin:10px 10px 10px 400px;
+	border:2px solid gray;
+	font:italic normal large arial;
+	background-color:white;
+	color:#009999;
+	border-radius:8px;
+}
+
+.air
+{
+	width:30px;
+	height:30px;
+	margin:10px;
+}
+
+

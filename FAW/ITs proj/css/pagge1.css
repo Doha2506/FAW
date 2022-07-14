@@ -1,0 +1,55 @@
+body{
+    background-image: url(photo22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.leg22{
+   border: 1px solid darkgray ;
+   background: #3dcceb;
+   padding: 5px 10px;
+   font-size: 18px
+}
+.fiel22{
+   background-color: #8ccbd8;
+   width:35%;
+   margin: 20px auto;
+   border: 1px solid darkgray;
+   padding: 10px;
+}
+.inp22,.inp222{
+    margin-bottom: 10px;
+    border:1px solid darkgray;
+    padding:3px;
+    height: 30px;
+    width: 150px;
+    background-color: #bac3c5;
+    display: block
+}
+input.inp222[type="submit"],input.inp222[type="button"]{
+  width: 110px;
+  background-color: #3dcceb; 
+  border-radius: 4px;
+  margin: 5px;
+  display:inline;
+}
+input.inp22[type="checkbox"]{
+    display:inline;
+    height: auto;
+    width: auto;
+    margin:5px;
+     
+}
+input.inp222[type="button"]{
+    width: 90px;
+    margin-left:200px;
+}
+input.inp222[value="Cancel"]{
+  width: 90px;
+  background-color: #3dcceb; 
+  border-radius: 4px;
+  margin: 5px;
+  display:inline;
+}
+#nex{
+    display: none;
+}

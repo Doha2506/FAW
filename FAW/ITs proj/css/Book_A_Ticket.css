@@ -1,0 +1,151 @@
+body
+{
+	font-style:oblique;
+	font-size:20px;
+	margin:10px 200px;
+}
+
+.new,.over
+{
+	display:none;
+}
+
+fieldset,legend
+{
+	color:#009999;
+	font-weight: bold;
+	background-color:#E5DDF3;	
+	border:2px solid black;
+	padding:8px;
+	margin:5px;	
+	border-radius:8px;
+}
+label
+{
+	color:#009999;
+	font-weight: bold;
+	display:inline;	
+	padding:7px;
+	margin:5px;
+	width:300px;
+}
+.name
+{
+	color:#009999;
+	font-weight: bold;
+	display:inline;	
+	padding:7px;
+	margin:10px 10px 10px 48px;
+	width:300px;
+	border-radius:5px;
+}
+.surname
+{
+	color:#009999;
+	font-weight: bold;
+	display:inline;	
+	padding:7px;
+	margin:10px 10px 10px 25px;
+	width:300px;
+	border-radius:5px;
+}
+.nation
+{
+	color:#009999;
+	font-weight: bold;
+	display:inline;	
+	padding:7px;
+	margin:10px 10px 15px 6px;
+	width:300px;
+	border-radius:5px;
+}
+
+
+.age
+{
+	color:#009999;
+	font-weight: bold;
+	display:inline;
+	width:50px;
+	padding:5px;
+	margin:10px 10px 10px 65px;
+	border-radius:5px;
+	
+}
+.gender
+{
+	margin:5px 40px 5px 5px ;
+	
+	
+}
+
+select
+{
+	color:#009999;
+	font-weight: bold;
+	display:inline;
+	size:10px;
+	padding:5px;
+	margin:15px 10px 15px 43px;
+	font-style:oblique;
+	font-size:medium;
+	border-radius:5px;
+}
+
+.main_ph
+{
+	display:inline;	
+	padding:5px;
+	margin:10px 10px 10px 50px;
+	width:120px;
+	border-radius:8px;
+	
+}
+
+
+.phone
+{
+	display:inline;	
+	padding:7px;
+	margin:10px 10px 10px 27px;
+	width:200px;
+	border-radius:8px;
+	
+}
+
+.email
+{
+	display:inline;	
+	padding:7px;
+	margin:10px 10px 10px 93px;
+	width:300px;
+	border-radius:8px;
+	
+}
+
+.date
+{
+	display:inline;
+	width:200px;
+	padding:7px;
+	margin:10px;
+	border-radius:8px;
+}
+
+.butt
+{
+	width:80;
+	height:30;
+	padding:8px;
+	margin:15px 5px 5px 400px;
+	border:1px solid gray;
+	background:white;
+	font-style:oblique;
+	font-size:medium;
+	color:#009999;
+	font-weight: bold;
+	border-radius:5px;
+}
+	
+	
+	

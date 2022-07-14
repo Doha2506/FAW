@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Distination</title>
+		<meta charset="UYF-8" />
+		<link rel="stylesheet" href="CSS/My Distination.css" type="text/css" />
+		
+	</head>
+	<body>
+		<form class="new1" name="myForm1" onsubmit="return valid_Form1()" method="post" action="Book_A_Ticket.html">
+			<fieldset>
+				<legend>Destination</legend>
+				
+				<form>
+					<input type="radio" id="round trip" name="way" value="rt" class="but1" />
+					<label for="Round trip" class="lab1">Round trip</label>
+					
+					<input type="radio" id="one way" name="way" value="ow" class="but2" />
+					<label for="oneway" class="lab2">Oneway</label>
+					
+					<input type="radio" id="multi city" name="way" value="mc" class="but3"  />
+					<label for="multi city" class="lab3">Multi city</label>
+				</form>
+				
+				<br><br>
+				
+				<input type="text" id="from" list="airports" placeholder="Departure Place"/>
+				<datalist id="airports"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				
+				<input type="text" id="to" class="to" list="airports" placeholder="Arrival Place"/>
+				<datalist id="airports1"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				<br>
+				<label>- Departure date<label>
+				<label class="test">- Return date</label>
+				<br>
+				<input type="date" id="fdate" min="1-1-2020" max="30-12-2025"  />
+				<input type="date" id="ldate" min="1-1-2020" max="30-12-2030"  class="dt" />
+				<br>
+				<label>- Cabin Class :</label>
+				<input type="text" id="class" class="class" list="how"/>
+				<datalist id="how"> 
+					<option value="Economy " />
+					<option value="Premium Economy " />
+					<option value="Busniss" />
+					<option value="Frist" />
+				</datalist>
+				<br>
+				<label>- Travelers :-</label>
+				<br>
+				<label>- Adults (+18 years)</label>
+				<input type="number" id="adult" class="num1" min="1" max="10" />
+				<br>
+				<label>- Youth (12-18 years)</label>
+				<input type="number" class="num2" min="0" max="10" />
+				<br>
+				<label>- Children (2-12 years)</label>
+				<input type="number" class="num3" min="0" max="10" />
+				<br>
+				<label>- Infants (up to 2 years)</label>
+				<input type="number" class="num4" min="0" max="10" />
+				
+				<button id ="btn" type="submit" class="sub" >Next</button>
+			</fieldset>
+	</form>
+		
+		<!---------------------------------------------------------------------------->
+		<!---------------------------------------------------------------------------->
+		
+		<form class="new2" name="myForm2" onsubmit="return valid_Form2()" method="post" action="Book_A_Ticket.html">
+			<fieldset>
+				<legend>Destination</legend>
+				
+				<input type="radio" class="but1" />
+				<label class="lab1">Round trip</label>
+				
+				<input type="radio" class="but2" />
+				<label class="lab2">Oneway</label>
+				
+				<input type="radio" class="but3" />
+				<label class="lab3">Multi city</label>
+				<br><br>
+				
+				<input type="text" id="from1" list="airports" placeholder="Departure Place"  />
+				<datalist id="airports"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				
+				<input type="text" id="to1" class="to" list="airports" placeholder="Arrival Place"  />
+				<datalist id="airports"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				<br>
+				
+				<label>- Departure date<label>
+				<br>
+				<input type="date" id="fdate1" min="1-1-2020" max="30-12-2025"  />
+				<br>
+				<label>- Cabin Class :</label>
+				<input type="text" id="class1" class="class" list="how"/>	
+				<datalist id="how">	
+					<option value="Economy"/>
+					<option value="Premium Economy"/>
+					<option value="Busniss"/>
+					<option value="Frist"/>
+				</datalist>
+				<br>
+			    <label>- Travelers :-</label>
+				<br>
+				<label>- Adults (+18 years)</label>
+				<input type="number" id="adult1" class="num1" id="adult" min="1" max="10" />
+				<br>
+				<label>- Youth (12-18 years)</label>
+				<input type="number" class="num2" min="0" max="10" />
+				<br>
+				<label>- Children (2-12 years)</label>
+				<input type="number" class="num3" min="0" max="10" />
+				<br>
+				<label>- Infants (up to 2 years)</label>
+				<input type="number" class="num4" min="0" max="10" />
+				
+				<button type="submit" id="sub" class="sub"> Next</button>
+			</fieldset>
+		</form>
+		
+		<!------------------------------------------------------------------------------>
+		<!------------------------------------------------------------------------------>
+		
+		<form class="new3" name="myForm3" onsubmit="return valid_Form3()" method="post" action="Book_A_Ticket.html" >
+			<fieldset>
+				<legend>Destination</legend>
+				
+				<input type="radio" class="but1" />
+				<label class="lab1">Round trip</label>
+				
+				<input type="radio" class="but2" />
+				<label class="lab2">Oneway</label>
+				
+				<input type="radio" class="but3" />
+				<label class="lab3">Multi city</label>
+				
+				<br><br>
+				
+				<input type="text" id="from2" list="airports" placeholder="Departure Place 1" required  />
+				<datalist id="airports"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				
+				<input type="text" id="to2" class="to" list="airports" placeholder="Arrival Place 1" required />
+				<datalist id="airports"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				<br>
+				<label>- Departure date<label>
+				<label class="test">- Return date</label>
+				<br>
+				<input type="date" id="fdate2" min="1-1-2020" max="30-12-2025" required />
+				<input type="date" id="ldate2" class="dt" min="1-1-2020" max="30-12-2030" required />
+				<br>
+				
+				<input type="text" id="from3" list="airports" placeholder="Departure Place 2" required />
+				<datalist id="airports"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				
+				<input type="text" id="to3" class="to"  list="airports" placeholder="Arrival Place 2" required />
+				<datalist id="airports"> 
+					<option value="Abu Dhabi International Airport " />
+					<option value="Cairo International Airport " />
+					<option value="King Khaled International Airport " />
+				</datalist>
+				<br>
+				
+				<label>- Departure date<label>
+				<label class="test">- Return date</label>
+				<br>
+				<input type="date" id="fdate3" min="1-1-2020" max="30-12-2025" required />
+				<input type="date" id="ldate3" class="dt" min="1-1-2020" max="30-12-2030" required />
+				
+				<br>
+				<!-------------------------------------------------------->
+				<div class="all">
+					<div class="div1">
+						<input type="text" id="from4" list="airports" placeholder="Departure Place 3"  />
+						<datalist id="airports"> 
+							<option value="Abu Dhabi International Airport " />
+							<option value="Cairo International Airport " />
+							<option value="King Khaled International Airport " />
+						</datalist>
+						
+						<input type="text" class="to" id="to4" list="airports" placeholder="Arrival Place 3"  />
+						<datalist id="airports"> 
+							<option value="Abu Dhabi International Airport " />
+							<option value="Cairo International Airport " />
+							<option value="King Khaled International Airport " />
+						</datalist>
+
+						<input type="button" class="delete1" value="&#10006;" /> 
+						<br>
+						<label>- Departure date<label>
+						<label class="test">- Return date</label>
+						<br>
+						<input type="date" id="fdate4" min="1-1-2020" max="30-12-2025"  />
+						<input type="date" id="ldate4" class="dt" min="1-1-2020" max="30-12-2030"  />
+						
+					</div>
+					<!----------------------------------------------------------->
+					<br>
+					<div class="div2">
+						<input type="text" list="airports" placeholder="Departure Place 4"  />
+						<datalist id="airports"> 
+							<option value="Abu Dhabi International Airport " />
+							<option value="Cairo International Airport " />
+							<option value="King Khaled International Airport " />
+						</datalist>
+						
+						<input type="text" class="to"  list="airports" placeholder="Arrival Place 4"  />
+						<datalist id="airports"> 
+							<option value="Abu Dhabi International Airport " />
+							<option value="Cairo International Airport " />
+							<option value="King Khaled International Airport " />
+						</datalist>
+				
+						<input type="button" class="delete2" value="&#10006;" /> 
+						<br>
+						
+						<label>- Departure date<label>
+						<label class="test">- Return date</label>
+						<br>
+						<input type="date" min="1-1-2020" max="30-12-2025"  />
+						<input type="date" class="dt" min="1-1-2020" max="30-12-2030"  />
+						
+					</div>
+					<!--------------------------------------------------------------->
+					<br>
+					<div class="div3">
+						<input type="text" list="airports" placeholder="Departure Place 5"  />
+						<datalist id="airports"> 
+							<option value="Abu Dhabi International Airport " />
+							<option value="Cairo International Airport " />
+							<option value="King Khaled International Airport " />
+						</datalist>
+						
+						<input type="text" class="to" list="airports" placeholder="Arrival Place 5"  />
+						<datalist id="airports"> 
+							<option value="Abu Dhabi International Airport " />
+							<option value="Cairo International Airport " />
+							<option value="King Khaled International Airport " />
+						</datalist>
+						
+						<input type="button" class="delete3" value="&#10006;" /> 
+						<br>
+						
+						<label>- Departure date<label>
+						<label class="test">- Return date</label>
+						<br>
+						<input type="date" min="1-1-2020" max="30-12-2025"  />
+						<input type="date" class="dt" min="1-1-2020" max="30-12-2030"  />
+					</div>
+				</div>
+				
+				<input type="button" class="add" value="Add A New Flight" />
+				<br><br>
+				
+				<label>- Cabin Class :</label>
+				<input type="text" id="class2" class="class" list="how" required />	
+				<datalist id="how">	
+					<option value="Economy"/>
+					<option value="Premium Economy"/>
+					<option value="Busniss"/>
+					<option value="Frist"/>
+				</datalist>
+				
+				<br>
+				
+				<label>- Travelers :-</label>
+				<br>
+				<label>- Adults (+18 years)</label>
+				<input type="number" class="num1"  id="adult" min="1" max="10" required />
+				<br>
+				<label>- Youth (12-18 years)</label>
+				<input type="number" class="num2" min="0" max="10"/>
+				<br>
+				<label>- Children (2-12 years)</label>
+				<input type="number" class="num3" min="0" max="10" />
+				<br>
+				<label>- Infants (up to 2 years)</label>
+				<input type="number" class="num4" min="0" max="10" />
+				<button type="submit" id="sub1" class="sub">Next</button>
+			</fieldset>
+		</form>
+	
+		<script src="js/jquery-1.11.1.js" ></script>
+		
+		<script>
+            let data=[];
+			const addMovi = (ev)=>{
+            let r = document.getElementById('round trip').value;
+            if(r=== 'rt'){
+			    localStorage.setItem('way',"1");
+			}};
+			document.addEventListener('DOMContentLoaded', ()=>{    
+            document.getElementById('round trip').addEventListener('click', addMovi);});
+			const addMov = (ev)=>{
+			let o = document.getElementById('one way').value;
+			if( o==='ow'){
+			    localStorage.setItem('way',"2");
+		    }};
+			document.addEventListener('DOMContentLoaded', ()=>{    
+            document.getElementById('one way').addEventListener('click', addMov);});
+			const addMo = (ev)=>{
+			let m= document.getElementById('multi city').value;
+			if( m==='mc'){
+				localStorage.setItem('way',"3");
+			}};
+			document.addEventListener('DOMContentLoaded', ()=>{    
+            document.getElementById('multi city').addEventListener('click', addMo);});
+
+			let x = localStorage.getItem("way");
+			if (x === "1"){
+                const oneway = (ev)=>{
+				let d={	
+				 from : document.getElementById('from').value,
+				 to : document.getElementById('to').value,
+				 class : document.getElementById('class').value,
+				 ddate:document.getElementById('fdate').value,
+                 rdate:document.getElementById('ldate').value
+				};
+				data.push(d);
+				localStorage.setItem('data',JSON.stringify(data));
+				};
+			    document.addEventListener('DOMContentLoaded', ()=>{    
+                document.getElementById('btn').addEventListener('click', oneway);});};
+				
+				if (x === "2"){
+                const oneway = (ev)=>{
+				let d={	
+				 from : document.getElementById('from1').value,
+				 to : document.getElementById('to1').value,
+				 class : document.getElementById('class1').value,
+				 ddate:document.getElementById('fdate1').value
+				};
+				data.push(d);
+				localStorage.setItem('data',JSON.stringify(data));
+				};
+			    document.addEventListener('DOMContentLoaded', ()=>{    
+                document.getElementById('sub').addEventListener('click', oneway);});};
+
+				if (x === "3"){
+                const oneway = (ev)=>{
+				let d={	
+				 class : document.getElementById('class2').value,
+				 from : document.getElementById('from2').value,
+				 to : document.getElementById('to2').value,
+				 ddate:document.getElementById('fdate2').value,
+				 rdate:document.getElementById('ldate2').value,
+				 from1 : document.getElementById('from3').value,
+				 to1 : document.getElementById('to3').value,
+				 ddate1:document.getElementById('fdate3').value,
+				 rdate1:document.getElementById('ldate3').value,
+				 from2 : document.getElementById('from4').value,
+				 to2 : document.getElementById('to4').value,
+				 ddate2:document.getElementById('fdate4').value,
+				 rdate2:document.getElementById('ldate4').value
+
+				};
+				data.push(d);
+				localStorage.setItem('data',JSON.stringify(data));
+				};
+			    document.addEventListener('DOMContentLoaded', ()=>{    
+                document.getElementById('sub1').addEventListener('click', oneway);});};
+			
+		</script>
+		
+		<script>
+			function valid_Form1()
+			{
+				var x = document.forms["myForm1"]["from"].value,
+				    y = document.forms["myForm1"]["to"].value,
+				    i = document.forms["myForm1"]["fdate"].value,
+				    j = document.forms["myForm1"]["ldate"].value,
+				    c = document.forms["myForm1"]["class"].value,
+				    a = document.forms["myForm1"]["adult"].value;
+				
+				if (x == "" )
+				{
+					alert("You Must Fill The Departure Place");
+					return false;
+				}
+				
+				else if (y == "" )
+				{
+					alert("You Must Fill The Arrival Place");
+					return false;
+				}
+				
+				else if (i == "" )
+				{
+					alert("You Must Fill The Deprature Date");
+					return false;
+				}
+				
+				else if (j == "" )
+				{
+					alert("You Must Fill The Return date");
+					return false;
+				}
+				
+				else if (c == "" )
+				{
+					alert("You Must Fill The Cabin Class");
+					return false;
+				}
+				
+				else if (a == "" )
+				{
+					alert("You Must Fill The Adult Travelers");
+					return false;
+				}
+				
+				else
+				{
+					alert("You Filld All Blanks Correctely");
+					return true;			
+				}		
+			}
+		</script>
+		
+		<script>
+			function valid_Form2()
+			{
+				var f = document.forms["myForm2"]["from1"].value,
+				    l = document.forms["myForm2"]["to1"].value,
+				    i = document.forms["myForm2"]["fdate1"].value,
+				    c = document.forms["myForm2"]["class1"].value,
+				    a = document.forms["myForm2"]["adult1"].value;
+
+				if (f == "" )
+				{
+					alert("You Must Fill The Departure Place");
+					return false;
+				}
+				
+				else if (l == "" )
+				{
+					alert("You Must Fill The Arrival Place");
+					return false;
+				}
+				
+				else if (i == "" )
+				{
+					alert("You Must Fill The Deprature Date");
+					return false;
+				}
+				
+				else if (c == "" )
+				{
+					alert("You Must Fill The Cabin Class");
+					return false;
+				}
+				
+				else if (a == "" )
+				{
+					alert("You Must Fill The Adult Travelers");
+					return false;
+				}
+
+				else
+				{
+					alert("You Filld All Blanks Correctely");
+					return true;	
+				}
+					
+			}
+		
+		</script>
+		
+		
+		<script>
+			$(document).ready(function()
+			{
+				$(".new1").show(1000);
+							
+				$(".but1").click(function()
+				{
+					$(".new2").hide(2000);
+					$(".new3").hide(2000);
+					$(".new1").show(2000);
+							
+				});
+							
+				$(".but2").click(function()
+				{
+					$(".new1").hide(2000);
+					$(".new2").show(2000);
+					$(".new3").hide(2000);
+				});
+							
+				$(".but3").click(function()
+				{
+					$(".new1").hide(2000);
+					$(".new2").hide(2000);
+					$(".new3").show(2000);
+				});
+							
+				$(".add").click(function()
+				{
+					$(".all").show();
+				});
+							
+				$(".delete1").click(function()
+				{
+					$(".div1").hide();
+				});
+							
+				$(".delete2").click(function()
+				{
+					$(".div2").hide();
+				});
+				
+				$(".delete3").click(function()
+				{
+					$(".div3").hide();			
+				});
+						
+			});
+		</script>
+		
+	</body>
+	
+</html>

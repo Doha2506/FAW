@@ -1,0 +1,65 @@
+body{
+    background-image: url(photo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.divv{
+    margin:10px auto;
+    width: 1000px;
+    border: 1px solid #a87474;
+    padding: 5px;
+}
+#div1{
+    background-color: darksalmon;
+    width:300px;
+    margin: 10px
+}
+.pa{
+   font-size: 50px;
+ display:;
+    text-align: center
+}
+.feed,.textarea111{
+    display: block;
+    margin:10px;
+    border:1px solid #a87474;
+    padding:5px;
+    background-color:antiquewhite;
+    width:200px;
+    height:30px;
+}
+.lab111{
+    font-size: 20px;
+    display: block;
+}
+.textarea111{
+    height:100px;
+}
+.butt111{
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    background-color: bisque;
+    margin: 5px
+}
+.rad111{
+    margin-left: 15px
+}
+.home{
+     margin: 10px;
+  padding:5px;
+  font-size: 25px;
+    display: inline;
+}
+#para11,#send{
+    color:red;
+    display:inline
+}
+#send{
+    color:green
+}
+#sendeval{
+    display: block;
+    width: 130px
+}

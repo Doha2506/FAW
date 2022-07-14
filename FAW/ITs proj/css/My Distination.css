@@ -1,0 +1,181 @@
+body
+{
+	font-style:italic;
+	font-size:large;	
+	margin:10px 50px;
+	
+}
+.new1,.new2,.new3,.all
+{
+	display:none;
+}
+
+fieldset,legend
+{			
+	color:#009999;
+	font-weight: bold;
+	border:2px solid black;
+	background-color: #E5DDF3;
+	padding:7px;
+	margin:5px;	
+	border-radius:8px;
+	
+}
+
+.but1
+{
+	
+	margin:5px 15px 5px -40px;
+		
+}
+.but2
+{
+	
+	margin:5px 15px 5px -10px;
+		
+}
+.but3
+{
+	
+	margin:5px 15px 5px 5px;
+		
+}
+
+.lab1
+{
+	font-style:italic;
+	font-size:large;
+	font-weight: bold;	
+	color:#009999;
+	margin:5px 5px 5px -150px;
+	
+}
+
+.lab2
+{
+	font-style:italic;
+	font-size:large;
+	font-weight: bold;	
+	color:#009999;
+	margin:2px;
+	margin:5px 5px 5px -150px;
+}
+.lab3
+{
+	font-style:italic;
+	font-size:large;
+	font-weight: bold;	
+	color:#009999;
+	margin:2px;
+	margin:5px 5px 5px -150px;
+}
+
+label
+{
+	padding:5px ;
+	margin:5px;
+	display:inline;
+	color:#009999;
+	font-weight: bold;
+	
+	
+}
+input
+{
+	color:#009999;
+	display:inline;
+	background-color:white;
+	width:300px;
+	padding:10px;
+	margin:10px;
+	font-size:medium;
+	font-weight: bold;
+	border-radius:8px;
+}
+
+.to
+{
+	display:inline;
+	background-color:white;
+	width:300px;
+	margin:10px 10px 10px 130px;
+	
+}
+
+
+.dt
+{
+	
+	margin:10px 10px 10px 130px;
+}
+
+.test
+{
+	margin:10px 10px 10px 330px;
+}
+
+.class
+{
+	display:inline;
+	width:180px;
+	padding:10px;
+	margin:10px;
+	color:#009999;
+	
+}
+
+.num1
+{
+	display:inline;
+	width:100px;
+	margin:10px 50px ;
+	padding:5px;
+}
+.num2
+{
+	display:inline;
+	width:100px;
+	margin:10px 45px ;
+	padding:5px;
+}
+.num3
+{
+	display:inline;
+	width:100px;
+	margin:10px 30px ;
+	padding:5px;
+}
+.num4
+{
+	display:inline;
+	width:100px;
+	margin:10px 28px ;
+	padding:5px;
+	
+}
+
+.sub
+{
+	width:100px;
+	padding:5px 3px 5px 3px;
+	margin:10px 10px 10px 700px;
+	border:1px solid gray;
+	background:white;
+	font-style:oblique;
+	font-size:medium;
+	border-radius:8px;
+}
+
+.delete1,.delete2,.delete3
+{
+	display:inline;
+	width:30px;
+	margin:10px;
+	padding:5px;
+	background-color:white;
+	font-size:15px;
+	
+}
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body
+{background:#000;
+font-weight:bold;
+}
+fieldset
+{
+background:#009999;
+color:white;
+font-family:Arial,Tahoma;
+border:1px solid #FFF;
+padding:10px;
+margin-bottom:30px;
+}
+legend
+{background:#FFF;color:#009999;
+border:1px solid #Click;padding:5px}
+label{margin-bottom:10px}
+input{margin-bottom:10px;background:#FFF}
+input[type="text"],input[type="number"],input[type="tel"],input[type="email"],input[type="date"]
+{padding:5px;width:300px}
+.sub{color:#009999}
+.spe{color:#009999}
+.frist{font-family:Arial; font-size:large; background-position:center; font-style:italic; font-weight:bold;
+text-align:center;color:#009999}
+.hom{color:#009999; font-weight:bold ; font-family:Arial,Tahoma}
+button {
+display: inline-block;
+padding:5px 15px;
+margin-bottom:10px;
+font-size:11px;
+font-family:"Time New Roman" , Arial , Serif;
+cursor: pointer;
+color:#009999;
+background-color:#FFF;
+text-decoration:none;
+outline:none;
+border:none; 
+border-radius:5px;
+left:80em; 
+position:relative;
+}
+</style>
+</head>
+<body>
+<form name="register"  method="post">
+<fieldset>
+<legend class="leg">Personal Information</legend>
+<label>First name:</label><br>
+<input type="text" name="First name" maxlength="20"><br>
+<label>Last name:</label><br>
+<input type="text" name="Last name" maxlength="20"><br>
+<label>Nationality:</label><br>
+<input type="text" name="Nationality"><br>
+<label>Age:</label><br>
+<input type="number" name="Age" min="1" max="110"><br>
+<label>Social status:</label><br>
+<input type="radio" name="Social status" value="single">single<br>
+<input type="radio" name="Social status" value="married">married<br>
+<label>Telephone number:</label><br>
+<input type="tel" name="phone" maxlength="11"><br>
+<label>E-mail:</label><br>
+<input type="email" name="email"><br>
+<label>Passport number:</label><br>
+<input type="number" name="passport number" min="1"><br>
+<label>Passport expiration date:</label><br>
+<input type="date" name="passport expiration date"><br>
+<label>National ID:</label><br>
+<input type="number" name="national id" min="1"><br>
+<input type="submit" class="spe" onclick="myfunction()" value="submit"><br>
+</fieldset>
+</form>
+<button onclick="document.location='sec.html'">Next</button>
+<script>
+function myfunction(){
+alert("The data has been sent successfully")
+}
+</script>
+</body>
+</html>

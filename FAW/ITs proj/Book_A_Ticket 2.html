@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Book A Ticket 2</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/Book A Ticket 2.css" />
+		<body background = "images/plane.jpg" /> 
+	</head>
+	<body>
+		<form action="Book_A_Ticket 3.html" method="post">
+			<fieldset>
+				<legend>Other Information</legend>
+				
+				<label class="one">- Ticket type</label>
+				<select>
+					<option>Retrieved</option>
+					<option>Not Retrieved</option>
+				</select>
+				<br>
+				<label class="one">- Stops</label>
+				<select class="stop">
+					<option>No Stop</option>
+					<option>+1 Stop</option>				
+					<option>+2 Stops</option>
+					<option>+3 Stops</option>
+				</select>
+				<br>
+				<label>- Airlines :<label>
+				<img src="images/MS.png" class="air"/>
+				<input type="radio" name="arilines" required />EgyptAir (MS)
+				<br>
+				<img src="images/SV.png" class="air"/>
+				<input type="radio" name="arilines" />Saudi Airlines Saudia (SV)	
+				<br>
+				<img src="images/EK.png" class="air"/>
+				<input type="radio" name="arilines"/>Emirates (EK)
+				<br>
+				<img src="images/KU.png" class="air"/>
+				<input type="radio" name="arilines"/>Kuwait Airways (KU)
+				<br>
+				<img src="images/ME.png" class="air"/>
+				<input type="radio" name="arilines"/>Middle East Airlines (ME)			
+					
+				
+				<button class="butt" type="submit"> Next </button>
+			</fieldset>
+		</form>
+	
+		<script src="js/jquery-1.11.1.js" ></script>
+		<script>
+		
+			$(document).ready(function()
+			{
+				$("form").fadeIn(1500);
+				
+			});
+			
+		</script>
+		
+	</body>
+</html>

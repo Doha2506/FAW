@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/pagge1.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+      <form action="sec1.html">
+       <fieldset class="fiel22">
+       <legend class="leg22">Hotel Reservation Data</legend>
+        <label>Please Enter Your Name</label>
+        <input class="inp22"type="text" name="place" placeholder="Name" required>
+        <label>Email Address</label>
+        <input class="inp22" type="email" name="eguestemail" placeholder="Invalid Email" required>
+        <label>The Place</label>
+        <input class="inp22" type="text" name="place" placeholder="Place Hotel" required>
+        <label>The Hotel Name</label>
+        <input class="inp22" type="text" name="hotel" placeholder="Hotel Name" required>
+        <label>Hotel level</label>
+        <select class="inp22" required>
+            <option value="5 Star">5 Star</option>
+            <option value="3 Star">3 Star</option>
+            <option value="Normal">Normal</option>
+        </select>
+        <label>Check-in Date</label>
+        <input class="inp22" type="date" name="check in date" required>
+        <label>Check-out Date</label>
+        <input class="inp22" id="outdate" type="date" name="check out date" required>
+        <label>Stay Duration</label>
+        <input id="Duration" class="inp22" type="number" value="" name="duration of stay" placeholder="Stay Duration" required>
+        <select class="inp22">
+             <option value="1 adult">1 adult</option>
+             <option value="2 adults">2 adults</option>
+             <option value="3 adults">3 adults</option>
+             <option value="4 adults">4 adults</option>
+             <option value="2 adults">5 adults</option>
+             <option value="2 adults">6 adults</option>
+             <option value="2 adults">7 adults</option>
+             <option value="2 adults">8 adults</option>
+             <option value="2 adults">9 adults</option>
+             <option value="2 adults">10 adults</option>
+        </select>
+        <select class="inp22">
+            <option value="0 children">No Children</option>
+            <option value="1 child">1 child</option>
+            <option value="2 children">2 children</option>
+            <option value="2 children">3 children</option>
+            <option value="2 children">4 children</option>
+            <option value="2 children">5 children</option>
+            <option value="2 children">6 children</option>
+            <option value="2 children">7 children</option>
+        </select>
+        <select class="inp22">
+            <option value="1 room">1 room</option>
+            <option value="2 room">2 room</option>
+            <option value="3 room">3 room</option>
+            <option value="4 room">4 room</option>
+            <option value="5 room">5 room</option>
+            <option value="6 room">6 room</option>
+            <option value="7 room">7 room</option>
+            <option value="8 room">8 room</option>
+            <option value="9 room">9 room</option>
+            <option value="10 room">10 room</option>
+            <option value="11 room">11 room</option>
+            <option value="12 room">12 room</option>
+            <option value="13 room">13 room</option>
+        </select>
+        <input class="inp22" type="checkbox" name="travel for work">
+        <label>Travelling for work</label>
+           <br>
+        <input class="inp222" type="submit" name="Reservation" value="Confirm Booking">
+        <input class="inp222" type="button" value="Cancel" onclick="">
+        <input class="inp222" type="button" id="nex" value="Next" hidden="">
+        </fieldset>
+     </form>
+        <script>
+        var dur=document.getElementById("Duration");
+        $("input[name='Reservation']").click(function(){
+            $("#nex").show();
+        });
+        dur.onchange=function(){
+        if (dur.value<=0){
+            alert("Value Of This Field Must Be Greater than 0");
+        }};
+      $(".inp22").focus(function(){
+         $(this).css("background-color","#a4eaf9") 
+      });
+      $(".inp22").blur(function(){
+         $(this).css("background-color","#bac3c5") 
+      });
+        </script>
+    </body>
+</html>

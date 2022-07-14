@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body
+{
+background:black;
+color:white
+}
+fieldset
+{
+background:#009999;
+font-family:Arial;
+border:1px solid #FFF;
+padding:10px;
+margin-bottom:30px
+}
+.three{font-weight:bold}
+input{margin-bottom:10px}
+label{font-family:Arial; margin-bottom:10px; font-weight:bold}
+.frist{font-family:Arial; font-size:large; background-position:center; font-style:italic; font-weight:bold;
+text-align:center; color:#009999}
+.hom{color:#009999}
+.tow{background:white;color:#009999}
+.tee{background:white;color:#009999}
+.neo{background:white;color:#009999}
+button {
+display: inline-block;
+padding:5px 15px;
+font-size:11px;
+font-family:"Time New Roman" , Arial , Serif;
+cursor: pointer;
+color:#009999;
+background-color:#FFF;
+text-decoration:none;
+outline:none;
+border:none;
+border-radius:5px;
+left:1em; 
+position:relative
+}
+</style>
+</head>
+<body>
+<form>
+<fieldset>
+<label >Your feedback of our website</label><br>
+<input type="radio" id="Very Bad" name="feedback" value="Very Bad">Very Bad <br>
+<input type="radio" id="Bad" name="feedback" value="Bad">Bad <br>
+<input type="radio" id="Good" name="feedback" value="Good">Good <br>
+<input type="radio" id="Very Good" name="feedback" value="Very Good">Very Good <br>
+</fieldset>
+<fieldset>
+<label >Do you have any problems with our site?</label><br><br>
+<button class="tow" type="button" onclick="document.getElementById('one').style.display='block'"> Yes </button> <br><br>
+<button class="tee" type="button" > No  </button> <br>
+<div id="one" style="display:none">
+<p style="font-weight:bold"> What are the problems?</p>
+<textarea name="massage" rows="10" cols="30">
+</textarea> 
+</div>
+</fieldset>
+<fieldset>
+<p class="three"> Your suggestions to improve the service on our site </p>
+<textarea name="massage" rows="10" cols="30">
+</textarea> <br>
+<input type="submit" class="neo" onclick="myfunction()" value="submit">
+</fieldset>
+</form>
+<label class="hom">To return to the home page , Click here   </label>
+<button onclick="document.location='project.html'">Home</button>
+<p class="frist"> Thank You For Using Our Website&#128525 </p>
+
+<script>
+function myfunction(){
+alert("The data has been sent successfully")
+}
+</script>
+</body>
+</html>

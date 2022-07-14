@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="css/pagg3.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+            <p class="pa">Thanks for using our website</p>
+         <div class="divv">
+             <label class="lab111">Please Evaluate Our Service</label>
+            <input class="rad111" type="radio" name="Evaluation" value="5 star">*****<br>
+            <input class="rad111" type="radio" name="Evaluation" value="4 star">****<br>
+            <input class="rad111" type="radio" name="Evaluation" value="3 star">***<br>
+            <input class="rad111" type="radio" name="Evaluation" value="2 star">**<br>
+            <input class="rad111" type="radio" name="Evaluation" value="1 star">*
+             <button id="sendeval" disabled onclick="evalute()" class="butt111">Send Evaluation</button>
+             <p id="evalutee"></p>
+            <p class="home">For any suggestions or complaints, Please fill in this information and write what you have:</p>
+            <input class="feed" type="text" placeholder="Your Name" name="name" required>
+            <input class="feed" type="email" placeholder="E-mail" name="e-mail" required>
+            <label class="lab111">suggestion</label>
+            <textarea class="textarea111" id="text1"></textarea>
+            <label class="lab111">Complaint</label>
+            <textarea class="textarea111"id="text2"></textarea>
+              <p id="para11"></p>
+             <br>
+            <button class="butt111" onclick="send()" >Send</button>
+            <button class="butt111" id="cont" onclick="contact()">contact us</button>
+           <div class="divv" id="div1" hidden>
+            <label class="lab111">Your Message:</label>
+            <textarea id="text3" class="textarea111"></textarea>
+            <input class="butt111" type="button" value="Send Message"><br>
+               <p id="send"></p>
+            </div>
+             <br>
+            <p class="home">To return to the Homepage, click here</p>
+            <button class="butt111" onclick="" >Homepage</button>
+        </div>
+           <script>
+              var text1=document.getElementById("text1"),
+                  text2=document.getElementById("text2"),
+                  text3=document.getElementById("text3"),
+                   para11=document.getElementById("para11"),
+                  evalut=document.getElementById("evalutee"),
+                  div1=document.getElementById("div1");
+              function send(){
+                    if (text1.value=="" && text2.value==""){
+                     para11.innerHTML="Fields are empty!.. You must write your suggestion or problem";
+                    }
+                    else{
+                    confirm("It will be sent. Are you sure?");}
+                };
+              function contact(){
+                    div1.style.display="block";
+                };
+                 
+              $("input[value='Send Message']").on("click",function(){
+                  $("#send").text("Message sent to the team work...Thanks");
+              });
+              
+              $("#cont").hover(function(){
+                  $(this).css("background-color","darksalmon");
+              },
+                function(){
+                  $(this).css("background-color","bisque");
+              });
+              $(".rad111").on("click",function(){
+                  document.getElementById("sendeval").disabled=false;
+              });
+                function evalute(){
+                    $("#evalut").show();
+                    evalut.style.color="green";
+                    evalut.innerHTML="Thanks For Your Evaluation To Our Service";
+                }
+            </script>
+    </body>

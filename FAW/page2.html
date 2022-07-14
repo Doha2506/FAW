@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <style>
+		body{
+         background-image:url(photo11.jpg);
+         background-repeat: no-repeat;
+         background-size: cover
+		}
+		.leg11{
+		   border: 1px solid  darkgray;
+		   background-color: #00d2ff;
+		   padding: 5px 10px;
+		   font-size:18px
+		}
+		.fiel11{ 
+			border: 1px solid darkgray;
+			background-color: azure;
+			padding: 10px;
+			width: 500px;
+			margin: 20px auto;
+		}
+		.lab11{
+			display: block;
+			font-size: 18px
+		}
+          .inp,.textarea11{
+			background-color: #a5ccd4;
+			margin-bottom: 10px;
+			padding: 5px;
+			width: 200px;
+			height: 30px;
+			display: block;
+			font-size:17px
+		}
+        
+		input[type="radio"]{
+			margin:0px 10px 10px 10px;
+		}
+		.textarea11{
+			height: 50px;
+		}
+		input[type="reset"],input[type="submit"],input[type="button"]{
+			  background-color: #3dcceb; 
+			  padding: 12px 20px;
+			  border-radius: 4px;
+			  cursor: pointer;
+		}
+		input[name="name on card"]{
+			width: 90px;
+			display: inline;
+		}
+		input[name="name on card"],input[placeholder="your Name"]{
+		 text-transform: capitalize   
+		}
+		input[name="name on card"],input[name="currency"],input[name="deserved amount"]{
+			width: 90px;
+			display: inline;
+		}
+		#par1,#par2{
+		color:red;
+		display:inline
+		}
+        #next11{
+           margin-left: 270px;   
+          }
+	  </style>
+    </head>
+ <body>
+      <form name="data of visa" action="page3.html">
+        <fieldset class="fiel11">
+            <legend class="leg11">Payment info</legend>
+             <label class="lab11">E-mail</label>
+             <input id="email1" class="inp" type="email" name="email1" placeholder="e-male" required>
+            <label class="lab11">Confirm E-mail</label>
+             <input id="email2" class="inp" type="email" name="email2" placeholder="e-male" required>
+			 <p id="par2"></p>
+             <label class="lab11">Name on Card</label>
+             <input class="inp" type="text" name="name on card" placeholder="First Name" required>
+             <input class="inp" type="text" name="name on card" placeholder="Last Name" required>
+            <label class="lab11">Residence</label>
+             <select id="coun" class="inp" name="residence" >
+                 <option value="Egypt">Egypt</option>
+                 <option value="Italia">Italia</option>
+                 <option value="Germany">Germany</option>
+                 <option value="France">France</option>
+                 <option value="Turkey">Turkey</option>
+                 <option value="Lebanon">Lebanon</option>
+                 <option value="Russia">Russia</option>
+                 <option value="Australia">Australia</option>
+                 <option value="Switzerland">Switzerland</option>
+             </select>
+             <label class="lab11">Phone with Card</label>
+             <input value="+20" id="num" class="inp" type="tel" name="guestelephone" placeholder="your number" required>
+             <label class="lab11">Card Number</label>
+             <input id="numcard" class="inp" type="text"  minlength="14" maxlength="14" name="card number" placeholder="Card Number" required>
+              <label class="lab11">Expire Date</label>
+              <input class="inp" type="date" name="Expire Date" required>
+             <label class="lab11">Deserved Amount</label>
+             <input id="deser" class="inp" type="number" name="deserved amount" placeholder="Value" required>
+			 <input id="curre" class="inp" type="text" name="currency" placeholder="Currency" required><br>
+            <p id="par1" hidden></p>
+              <label class="lab11">Security Code</label>
+              <input class="inp" type="password" name="security code" placeholder="security code" required>
+             <label class="lab11">Any Notes</label>
+             <textarea class="textarea11">Notes:</textarea>
+			<p id="par3"></p>
+			 <input  type="submit" id="pay"value="Pay">
+             <input type="reset">
+            <input id="next11" type="button" value="Next">
+         </fieldset>
+        </form>
+     <script>
+var complate=document.getElementById("pay"),
+    emaill=document.getElementById("email1"),
+    email=document.getElementById("email2"),
+    par2=document.getElementById("par2"),
+    par1=document.getElementById("par1"),
+    numcardd=document.getElementById("numcard"),
+    currency=document.getElementById("curre"),
+    deserv=document.getElementById("deser"),
+    par3=document.getElementById("par3");
+	
+email.onchange=function(){
+if(emaill.value != email.value){
+  par2.innerHTML="It appears that the email does not match!";
+		par2.style.display="inline";
+}
+else{
+	par2.style.display="none";
+}
+};
+deserv.onchange=function(){
+ if(deserv.value<=0){
+     $("#par1").show();
+		par1.innerHTML="ERORR! Value must be greater than 0";
+		}else{$("#par1").hide();}
+ };
+ complate.onclick=function(){
+		par3.innerHTML= "An amount of "+deserv.value +currency.value+" will be deducted from your credit card </br>num of card:"+numcardd.value+"</br>To confirm press Next";
+	};
+ 
+var x= document.getElementById("num"),
+    y= document.getElementById("coun");
+ y.onchange=function(){
+    switch(y.value){ 
+        case "Egypt":
+             x.value='+20';
+            break;
+        case "Italia":
+             x.value='+39';
+            break;
+        case "Germany":
+             x.value='+49';
+            break;
+        case "France":
+             x.value='+33';
+            break;
+        case "Turkey":
+             x.value='+90';
+            break;
+        case "Lebanon":
+             x.value='+961';
+            break;
+        case "Russia":
+             x.value='+07';
+            break;
+        case "Australia":
+             x.value='+61';
+            break;
+        case "Switzerland":
+             x.value='+41';
+            break;
+    }
+};
+	 </script>
+ </body>
+</html>

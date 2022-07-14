@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Book A Ticket</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/Book_A_Ticket.css"  />
+		<body background = "images/plane.jpg" />
+	</head>
+	<body>
+		<form class="new" action="Book_A_Ticket 2.html" method="post" onsubmit="return nationalId()" >	
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>- Name</label>
+				<input type="text" id="name" class="name" placeholder="Write Your Name" required />
+				<br>
+				<label>- Surname </label>
+				<input type="text"  class="surname" placeholder="Write Your Surname" required />
+				<br>
+				<label>- Nationality</label>
+				<input type="text" class="nation" placeholder="Write Your Nationality" required />
+				<br>
+				<label>- Age</label>
+				<input type="number" class="age" min="1" max="60" required />
+				<br>
+				<label>- National ID</label>
+				<input type="text" class="nation" placeholder="Write Your National ID" required />
+				<br>
+				<label class="gender">- Gender</label>					
+				<input type="radio" name="Gender" required />Male
+				<input type="radio" name="Gender" required />Female
+				<br>
+				<label>- Social Status</label>
+				<select>
+					<option>Celibate</option>
+					<option>Married</option>
+					<option>Divorced </option>
+					<option>Widowed </option>
+				</select>
+				<br>
+				<label>- Main phone</label>
+				<input type="text" list="con" class="main_ph"/>
+				<datalist id="con">
+					<option>Australia+61</option>
+					<option>Egypt+20</option>
+					<option>Italy+39</option>
+					<option>Turkey+90</option>
+					<option>UK+44</option>
+					<option>USA+1</option>
+				</datalist>
+				<br>
+				<label>- Phone Number</label>
+				<input type="tel"  class="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required >
+				<small>Format: 123-45-678</small>
+				<br>
+				<label>- E-mail</label>
+				<input type="email" class="email" placeholder="Write Your E-mail" required />
+				<br>
+				<label>- Passport Number</label>
+				<input type="text" id="num" class="nation" placeholder="Write Your Pssport Number" required />
+				<br>
+				<label>- Passport Passport expiration date</label>
+				<input type="date" class="date" required />
+				<br>
+				<button id="butt" class="butt" type="submit">Finish</button> 
+				
+			</fieldset>
+		</form>
+		
+		
+		<script src="js/jquery-1.11.1.js"></script>
+
+        <script type="text/javascript">		
+			let Data=localStorage.getItem("data");
+			data=JSON.parse(Data);
+            const personalData = (ev)=>{
+		    for(let i=0;i<data.length;i++){
+				 data[i].name=document.getElementById("name").value;
+				 data[i].passport=document.getElementById("num").value;
+			 }
+			localStorage.setItem( 'data' , JSON.stringify(data) );
+			};
+			document.addEventListener('DOMContentLoaded', ()=>{
+			document.getElementById('butt').addEventListener('click',personalData);
+			});
+	    </script>
+	
+		<script>
+			 $(document).ready(function()
+			{
+				$(".new").slideDown(1000);			
+			});
+		</script>
+		
+	</body>
+</html>

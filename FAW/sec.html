@@ -1,0 +1,71 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body
+{
+background:#000; color:white;
+}
+fieldset
+{
+background:#009999;
+font-family:Arial,Tahoma;
+border:1px solid #FFF;
+padding:30px;
+}
+label{margin-bottom:10px; font-weight:bold}
+input{margin-bottom:10px}
+input[type="text"],input[type="number"],input[type="date"],input[type="password"]
+{padding:5px; width:300px}
+button {
+display: inline-block;
+padding:5px 15px;
+margin-bottom:10px;
+font-size:11px;
+font-family:"Time New Roman" , Arial , Serif;
+cursor: pointer;
+color:#009999;
+background-color:#FFF;
+text-decoration:none;
+outline:none;
+border:none;
+border-radius:5px;
+left:75em; 
+position:relative;
+}
+.one{background:white;color:#009999}
+</style>
+</head>
+<body>
+<form name="register">
+<fieldset>
+<label>Room type:</label><br>
+<input type="radio" name="room type" value="normal room">Normal room <br>
+<input type="radio" name="room type" value="big room">Big room <br>
+<input type="radio" name="room type" value="suit">Suite <br>
+<label>The Room have</label><br>
+<input type="radio" name="room" value="bed">one bad <br>
+<input type="radio" name="room" value="two bed">two bed <br>
+<label>The Room have</label><br>
+<input type="radio" name="room type" value="wi-fi">Wi-Fi <br>
+<input type="radio" name="room type" value="without wi-fi">Without Wi-Fi <br>
+<label>Payment method:</label><br>
+<input type="radio" name="payment method" value="visa">Visa<br>
+<input type="radio" name="payment method" value="master card">Master card<br>
+<label>Visa number:</label><br>
+<input type="number" name="visa number" min="1"><br>
+<label>Visa password:</label><br>
+<input type="password" name="visa password"><br>
+<label>Visa expirration date:</label><br>
+<input type="date" name="visa expiration date"><br>
+<input type="submit" class="one" onclick="myfunction()" value="submit"><br><br>
+</fieldset>
+</form>
+<button onclick="document.location='sec4.html'">Next</button>
+<script>
+function myfunction(){
+alert("The data has been sent successfully")
+}
+</script>
+</body>
+</html>
